@@ -1,0 +1,81 @@
+<!-- Basic Form -->
+<form class="mb-4">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="remember">
+    <label class="form-check-label" for="remember">Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- Form with Validation -->
+<form class="needs-validation mb-4" novalidate>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">First name</label>
+      <input type="text" class="form-control" id="firstName" required>
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Please provide a first name.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="lastName" required>
+      <div class="invalid-feedback">Please provide a last name.</div>
+    </div>
+  </div>
+  <div class="col-12 mt-3">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+<!-- Input Groups -->
+<div class="mb-3">
+  <label for="username" class="form-label">Username</label>
+  <div class="input-group">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" id="username" placeholder="Username">
+  </div>
+</div>
+
+<div class="mb-3">
+  <label for="price" class="form-label">Price</label>
+  <div class="input-group">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control" id="price">
+    <span class="input-group-text">.00</span>
+  </div>
+</div>
+
+<!-- Select and Textarea -->
+<div class="mb-3">
+  <label for="country" class="form-label">Country</label>
+  <select class="form-select" id="country">
+    <option selected>Choose...</option>
+    <option value="1">United States</option>
+    <option value="2">Canada</option>
+    <option value="3">Mexico</option>
+  </select>
+</div>
+
+<div class="mb-3">
+  <label for="message" class="form-label">Message</label>
+  <textarea class="form-control" id="message" rows="3"></textarea>
+</div>
+
+<!-- Range and File Input -->
+<div class="mb-3">
+  <label for="range" class="form-label">Range</label>
+  <input type="range" class="form-range" min="0" max="5" id="range">
+</div>
+
+<div class="mb-3">
+  <label for="file" class="form-label">File input</label>
+  <input class="form-control" type="file" id="file">
+</div>

@@ -1,0 +1,12 @@
+:root {
+  --brand: #0057ff;
+  --text: #111;
+}
+
+body {
+  color: var(--text);
+}
+
+.card {
+  border-radius: 12px;
+}

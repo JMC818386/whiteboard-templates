@@ -1,0 +1,17 @@
+:root {
+  --brand-50: #edf2ff;
+  --brand-100: #dbe4ff;
+  --brand-500: #0057ff;
+  --brand-700: #0041bf;
+  --neutral-0: #fff;
+  --neutral-900: #111;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 20px;
+  --space-xl: 32px;
+  --text-base: 16px;
+}

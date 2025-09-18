@@ -1,0 +1,29 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Whiteboard API",
+  "folders": [],
+  "requests": [
+    {
+      "name": "Node Health",
+      "url": "http://localhost:4000/health",
+      "method": "GET"
+    },
+    {
+      "name": "Django Ping",
+      "url": "http://127.0.0.1:8000/api/ping/",
+      "method": "GET"
+    },
+    {
+      "name": "Create Note",
+      "url": "http://127.0.0.1:8000/api/notes/",
+      "method": "POST",
+      "body": {
+        "type": "json",
+        "raw": {
+          "title": "Hello",
+          "body": "From Thunder Client"
+        }
+      }
+    }
+  ]
+}

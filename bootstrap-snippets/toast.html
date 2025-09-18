@@ -1,0 +1,75 @@
+<!-- Toast Container (add to page) -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <!-- Toasts will be appended here -->
+</div>
+
+<!-- Basic Toast -->
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="https://via.placeholder.com/20x20" class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+
+<!-- Success Toast -->
+<div class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      ✓ Your changes have been saved successfully!
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+      aria-label="Close"></button>
+  </div>
+</div>
+
+<!-- Error Toast -->
+<div class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      ⚠ Something went wrong. Please try again.
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+      aria-label="Close"></button>
+  </div>
+</div>
+
+<!-- Warning Toast -->
+<div class="toast align-items-center text-bg-warning border-0" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      ⚡ Your session will expire in 5 minutes.
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+
+<!-- JavaScript to show toasts -->
+<script>
+  // Show all toasts
+  document.querySelectorAll('.toast').forEach(toast => {
+    new bootstrap.Toast(toast).show();
+  });
+
+  // Show toast programmatically
+  function showToast(message, type = 'primary') {
+    const toastHTML = `
+    <div class="toast align-items-center text-bg-${type} border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">${message}</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  `;
+
+    const toastContainer = document.querySelector('.toast-container');
+    toastContainer.insertAdjacentHTML('beforeend', toastHTML);
+
+    const newToast = toastContainer.lastElementChild;
+    new bootstrap.Toast(newToast).show();
+  }
+</script>

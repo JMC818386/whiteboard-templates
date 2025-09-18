@@ -1,0 +1,122 @@
+<!-- Basic Table -->
+<table class="table mb-4">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Striped Table -->
+<table class="table table-striped mb-4">
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Price</th>
+      <th scope="col">Stock</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Laptop</td>
+      <td>$999.99</td>
+      <td><span class="badge bg-success">In Stock</span></td>
+      <td>
+        <button class="btn btn-sm btn-outline-primary me-1">Edit</button>
+        <button class="btn btn-sm btn-outline-danger">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>$699.99</td>
+      <td><span class="badge bg-warning">Low Stock</span></td>
+      <td>
+        <button class="btn btn-sm btn-outline-primary me-1">Edit</button>
+        <button class="btn btn-sm btn-outline-danger">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>$399.99</td>
+      <td><span class="badge bg-danger">Out of Stock</span></td>
+      <td>
+        <button class="btn btn-sm btn-outline-primary me-1">Edit</button>
+        <button class="btn btn-sm btn-outline-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Responsive Table -->
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Department</th>
+        <th scope="col">Role</th>
+        <th scope="col">Status</th>
+        <th scope="col">Last Login</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">001</th>
+        <td>John Doe</td>
+        <td>john@example.com</td>
+        <td>Engineering</td>
+        <td>Senior Developer</td>
+        <td><span class="badge bg-success">Active</span></td>
+        <td>2 hours ago</td>
+        <td>
+          <div class="btn-group btn-group-sm">
+            <button class="btn btn-outline-primary">View</button>
+            <button class="btn btn-outline-secondary">Edit</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">002</th>
+        <td>Jane Smith</td>
+        <td>jane@example.com</td>
+        <td>Design</td>
+        <td>UX Designer</td>
+        <td><span class="badge bg-warning">Away</span></td>
+        <td>1 day ago</td>
+        <td>
+          <div class="btn-group btn-group-sm">
+            <button class="btn btn-outline-primary">View</button>
+            <button class="btn btn-outline-secondary">Edit</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
