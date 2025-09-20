@@ -11,5 +11,5 @@ app.use(corsMiddleware);
 app.use('/health', health);
 app.use('/api', examples);
 
-const port = Number(process.env.NODE_API_PORT || 4000);
+const port = Number(process.env.NODE_API_PORT || 4001);
 app.listen(port, () => console.log(`Node API on http://localhost:${port}`));
